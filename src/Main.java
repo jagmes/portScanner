@@ -24,7 +24,7 @@ public class Main {
                     try {
                         InetAddress inetAddress =  InetAddress.getByName(ip);
                         Socket socket= new Socket(inetAddress,port);
-                        socket.setSoTimeout(3000);
+                        socket.setSoTimeout(5000);
                         System.out.println("Порт " +port+ "открыт");
                         results.append("Порт " +port+ "открыт\n");
                         socket.close();
